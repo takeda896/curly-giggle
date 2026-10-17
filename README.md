@@ -47,5 +47,5 @@ python -m catalyst.build episodes/ai-power-problem/script.json
 ## 公開の流れ
 
 1. ビルドして本編・リールを確認する
-2. `catalyst-video-host` に動画を置く(Bufferが読み込める公開URLにするため)
-3. Buffer で YouTube(本編)と Instagram(リール)に予約投稿する。本文は `youtube.txt` を使う
+2. 本編は YouTube Studio から直接アップロードする(BufferのYouTube連携はショート動画扱いになるため)。タイトル・概要欄は `youtube.txt`、サムネイルは `thumbnail.jpg` を使う
+3. リールは `catalyst-video-host` に置いて公開URLを作り、Buffer から Instagram に投稿する
